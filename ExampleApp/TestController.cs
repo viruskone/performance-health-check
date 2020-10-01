@@ -8,10 +8,12 @@ namespace ExampleApp
     public class TestController : ControllerBase
     {
 
-        public async Task WorkOne([FromQuery] int waitTime)
+        [HttpPost]
+        public async Task WorkOne(WorkModel work)
         {
-            await Task.Delay(waitTime);
+            await Task.Delay(work.WaitTime);
         }
 
     }
+
 }

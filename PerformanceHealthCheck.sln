@@ -11,7 +11,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleApp", "ExampleApp\Ex
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PerformanceHealthCheck.AspNetCore", "PerformanceHealthCheck.AspNetCore\PerformanceHealthCheck.AspNetCore.csproj", "{6EED11CE-ABC4-4863-8E5A-86D84111B66C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceTests", "ServiceTests\ServiceTests.csproj", "{24BDDA22-05D8-4BFF-AF0B-79CBB35A11D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceTests", "ServiceTests\ServiceTests.csproj", "{24BDDA22-05D8-4BFF-AF0B-79CBB35A11D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Performance", "Performance", "{795B641A-4448-474F-92E7-51AD33A9C92A}"
+	ProjectSection(SolutionItems) = preProject
+		Performance\run.ps1 = Performance\run.ps1
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerformanceClientApp", "Performance\PerformanceClientApp\PerformanceClientApp.csproj", "{2C735FF3-D76C-492D-920B-F414D7289D21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,9 +46,16 @@ Global
 		{24BDDA22-05D8-4BFF-AF0B-79CBB35A11D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24BDDA22-05D8-4BFF-AF0B-79CBB35A11D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24BDDA22-05D8-4BFF-AF0B-79CBB35A11D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C735FF3-D76C-492D-920B-F414D7289D21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C735FF3-D76C-492D-920B-F414D7289D21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C735FF3-D76C-492D-920B-F414D7289D21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C735FF3-D76C-492D-920B-F414D7289D21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2C735FF3-D76C-492D-920B-F414D7289D21} = {795B641A-4448-474F-92E7-51AD33A9C92A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0C1599FC-59E6-4BA1-92EA-65D06388D7D7}
